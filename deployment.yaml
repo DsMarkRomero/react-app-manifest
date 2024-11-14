@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: react-container
-          image: localhost:32000/prime-number-frontend:08f60d6ac6b26d6170b4d9ad34b330c75fdf8636
+          image: docker-registry.ns-tekton-ci.svc.cluster.local:5000/prime-number-frontend:d514abb584b3706f5951b3dff733f7e6156ec3d2
           imagePullPolicy: Always
           ports:
             - containerPort: 80
