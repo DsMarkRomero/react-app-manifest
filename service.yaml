@@ -10,5 +10,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-      nodePort: 30069  # Puedes ajustar este puerto si lo deseas
+      nodePort: 30070  # Puedes ajustar este puerto si lo deseas
   type: NodePort
