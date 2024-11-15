@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: react-container
-          image: localhost:32000/prime-number-frontend:master-25e61cebdc91be129af728ff72e45cd95ae7a878
+          image: localhost:32000/prime-number-frontend:master-f4d2683f807d4a0f2d5439ec07d5c7e6627b82b9
           imagePullPolicy: Always
           ports:
             - containerPort: 80
