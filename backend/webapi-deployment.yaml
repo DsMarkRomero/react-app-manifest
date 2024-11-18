@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: prime-number-webapi
-        image: localhost:32000/prime-number-backend:master-813cfaa7fc2e4d3d94ce731ef2f137667fcdb359
+        image: localhost:32000/prime-number-backend:master-97b171d5d84c4986f5eb9eb2dc4ebfe9430bfeef
         ports:
         - containerPort: 80
         env:
