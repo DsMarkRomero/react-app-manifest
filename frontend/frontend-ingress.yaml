@@ -16,4 +16,4 @@ spec:
               service:
                 name: react-service
                 port:
-                  number: 80
+                  number: 80 #
