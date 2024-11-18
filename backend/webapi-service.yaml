@@ -8,6 +8,6 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort: 31594  # Mantén el NodePort para accesibilidad externa
+      nodePort: 31595  # Mantén el NodePort para accesibilidad externa
   selector:
     app: prime-number-webapi
