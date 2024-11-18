@@ -8,6 +8,6 @@ spec:
   ports:
     - port: 1433
       targetPort: 1433
-      nodePort: 31433  # Puerto expuesto en el nodo
+      nodePort: 314334  # Puerto expuesto en el nodo
   selector:
     app: mssql
