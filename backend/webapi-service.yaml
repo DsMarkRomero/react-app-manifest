@@ -4,10 +4,10 @@ metadata:
   name: prime-number-webapi-service
   namespace: ns-react-app-master
 spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 31594  # Mantén el NodePort para accesibilidad externa
   selector:
     app: prime-number-webapi
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  type: LoadBalancer  # O NodePort, según tu entorno
