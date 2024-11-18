@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapi-ingress
+  namespace: ns-react-app-master
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: https://c297-90-168-208-199.ngrok-free.app
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: prime-number-webapi-service
+                port:
+                  number: 8080
