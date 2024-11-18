@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prime-number-webapi
+  namespace: ns-react-app-develop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prime-number-webapi
+  template:
+    metadata:
+      labels:
+        app: prime-number-webapi
+    spec:
+      containers:
+      - name: prime-number-webapi
+        image: localhost:32000/prime-number-backend:master-813cfaa7fc2e4d3d94ce731ef2f137667fcdb359
+        ports:
+        - containerPort: 80
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: "Production"
+        - name: ConnectionStrings__PrimeNumberDB
+          value: "Server=mssql-service;Database=PrimeNumberDB;User ID=sa;Password=SQLtest1;TrustServerCertificate=True;"
