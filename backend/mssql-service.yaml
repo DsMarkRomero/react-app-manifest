@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mssql-service
+  namespace: ns-react-app-master
+spec:
+  type: NodePort
+  ports:
+    - port: 1433
+      targetPort: 1433
+      nodePort: 31433  # Puerto expuesto en el nodo
+  selector:
+    app: mssql
